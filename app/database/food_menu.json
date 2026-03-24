@@ -1,0 +1,867 @@
+{
+    "restaurant": {
+        "name": "Quick Serve Restaurant",
+        "location": "Peepalchauck mandal sera,Bageshwar",
+        "contact": "+91-7657898765"
+    },
+    "menu": [
+        {
+            "id": "AP201",
+            "name": "Paneer Pakoda",
+            "category": "Appetizers",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 90,
+                "full": 160
+            },
+            "tags": [
+                "\ud83e\uddc0 crispy"
+            ],
+            "available": true
+        },
+        {
+            "id": "AP203",
+            "name": "Veg Nuggets",
+            "category": "Appetizers",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 90,
+                "full": 160
+            },
+            "available": true
+        },
+        {
+            "id": "AP204",
+            "name": "Chicken Nuggets",
+            "category": "Appetizers",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 130,
+                "full": 240
+            },
+            "available": true
+        },
+        {
+            "id": "AP205",
+            "name": "Chicken Wings",
+            "category": "Appetizers",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 150,
+                "full": 260
+            },
+            "tags": [
+                "\ud83d\udd25 spicy"
+            ],
+            "available": true
+        },
+        {
+            "id": "AP206",
+            "name": "Fish Fingers",
+            "category": "Appetizers",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 160,
+                "full": 280
+            },
+            "available": true
+        },
+        {
+            "id": "BF001",
+            "name": "Aloo Paratha",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 50
+            },
+            "tags": [
+                "\u2b50 popular"
+            ],
+            "available": true
+        },
+        {
+            "id": "BF002",
+            "name": "Paneer Paratha",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 70
+            },
+            "available": true
+        },
+        {
+            "id": "BF003",
+            "name": "Poha",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 40
+            },
+            "tags": [
+                "\ud83d\udcaa light"
+            ],
+            "available": true
+        },
+        {
+            "id": "BF004",
+            "name": "Upma",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 40
+            },
+            "available": true
+        },
+        {
+            "id": "BF012",
+            "name": "Egg Bhurji",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "non-veg",
+            "price": {
+                "single": 60
+            },
+            "tags": [
+                "\ud83d\udd25 spicy"
+            ],
+            "available": true
+        },
+        {
+            "id": "BF005",
+            "name": "Idli Sambar",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 50
+            },
+            "tags": [
+                "new"
+            ],
+            "available": true
+        },
+        {
+            "id": "BF006",
+            "name": "Masala Dosa",
+            "category": "Breakfast",
+            "meal": [
+                "breakfast"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 70
+            },
+            "tags": [
+                "\u2b50 bestseller"
+            ],
+            "available": true
+        },
+        {
+            "id": "SL016",
+            "name": "Green Salad",
+            "category": "Salads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 50,
+                "full": 90
+            },
+            "tags": [
+                "\ud83d\udcaa healthy"
+            ],
+            "available": true
+        },
+        {
+            "id": "SL017",
+            "name": "Onion Salad",
+            "category": "Salads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 40,
+                "full": 90
+            },
+            "available": true
+        },
+        {
+            "id": "SL019",
+            "name": "Fruit Salad",
+            "category": "Salads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 90,
+                "full": 180
+            },
+            "available": true
+        },
+        {
+            "id": "EG020",
+            "name": "Egg Curry",
+            "category": "Egg Specials",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 90,
+                "full": 160
+            },
+            "available": true
+        },
+        {
+            "id": "EG021",
+            "name": "Egg Bhurji",
+            "category": "Egg Specials",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 80,
+                "full": 140
+            },
+            "tags": [
+                "\ud83d\udd25 spicy"
+            ],
+            "available": true
+        },
+        {
+            "id": "EG022",
+            "name": "Egg Fried Rice",
+            "category": "Egg Specials",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 100,
+                "full": 140
+            },
+            "available": true
+        },
+        {
+            "id": "RB023",
+            "name": "Chicken Biryani",
+            "category": "Rice & Biryani",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 130,
+                "full": 240
+            },
+            "tags": [
+                "\u2b50 bestseller"
+            ],
+            "available": true
+        },
+        {
+            "id": "RB024",
+            "name": "Mutton Biryani",
+            "category": "Rice & Biryani",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 160,
+                "full": 300
+            },
+            "available": true
+        },
+        {
+            "id": "RB025",
+            "name": "Veg Pulao",
+            "category": "Rice & Biryani",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 90,
+                "full": 160
+            },
+            "available": true
+        },
+        {
+            "id": "RB026",
+            "name": "Jeera Rice",
+            "category": "Rice & Biryani",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 60,
+                "full": 100
+            },
+            "available": true
+        },
+        {
+            "id": "BR028",
+            "name": "Butter Naan",
+            "category": "Indian Breads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 30
+            },
+            "tags": [
+                "\ud83e\uddc8 buttery"
+            ],
+            "available": true
+        },
+        {
+            "id": "BR029",
+            "name": "Garlic Naan",
+            "category": "Indian Breads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 40
+            },
+            "available": true
+        },
+        {
+            "id": "BR030",
+            "name": "Tandoori Roti",
+            "category": "Indian Breads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 15
+            },
+            "available": true
+        },
+        {
+            "id": "BR031",
+            "name": "Lachha Paratha",
+            "category": "Indian Breads",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 35
+            },
+            "available": true
+        },
+        {
+            "id": "TD032",
+            "name": "Tandoori Chicken",
+            "category": "Tandoor / Grill",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 180,
+                "full": 320
+            },
+            "available": true
+        },
+        {
+            "id": "TD033",
+            "name": "Paneer Tikka",
+            "category": "Tandoor / Grill",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 120,
+                "full": 220
+            },
+            "available": true
+        },
+        {
+            "id": "TD034",
+            "name": "Chicken Seekh Kebab",
+            "category": "Tandoor / Grill",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 160,
+                "full": 280
+            },
+            "tags": [
+                "\ud83d\udd25 juicy"
+            ],
+            "available": true
+        },
+        {
+            "id": "TD035",
+            "name": "Mutton Seekh Kebab",
+            "category": "Tandoor / Grill",
+            "meal": [
+                "lunch",
+                "dinner"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 190,
+                "full": 340
+            },
+            "tags": [
+                "\u2b50 premium"
+            ],
+            "available": true
+        },
+        {
+            "id": "IN601",
+            "name": "Veg Pizza",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 150,
+                "full": 280
+            },
+            "available": true
+        },
+        {
+            "id": "IN602",
+            "name": "Chicken Pizza",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 180,
+                "full": 320
+            },
+            "available": true
+        },
+        {
+            "id": "IN603",
+            "name": "Veg Pasta",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 120,
+                "full": 200
+            },
+            "available": true
+        },
+        {
+            "id": "IN604",
+            "name": "Chicken Pasta",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 150,
+                "full": 240
+            },
+            "available": true
+        },
+        {
+            "id": "IN607",
+            "name": "French Fries",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 100,
+                "full": 190
+            },
+            "available": true
+        },
+        {
+            "id": "IN608",
+            "name": "Grilled Chicken",
+            "category": "International",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 180,
+                "full": 300
+            },
+            "available": true
+        },
+        {
+            "id": "SP011",
+            "name": "Tomato Soup",
+            "category": "Soups",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 60,
+                "full": 120
+            },
+            "tags": [
+                "\ud83d\udcaa healthy"
+            ],
+            "available": true
+        },
+        {
+            "id": "SP012",
+            "name": "Sweet Corn Soup",
+            "category": "Soups",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 70,
+                "full": 130
+            },
+            "available": true
+        },
+        {
+            "id": "SP013",
+            "name": "Hot & Sour Soup",
+            "category": "Soups",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 80,
+                "full": 150
+            },
+            "tags": [
+                "\ud83d\udd25 spicy"
+            ],
+            "available": true
+        },
+        {
+            "id": "SP014",
+            "name": "Chicken Soup",
+            "category": "Soups",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 90,
+                "full": 170
+            },
+            "available": true
+        },
+        {
+            "id": "ST501",
+            "name": "Pav Bhaji",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 120,
+                "full": 200
+            },
+            "available": true
+        },
+        {
+            "id": "ST502",
+            "name": "Chole Bhature",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 130,
+                "full": 200
+            },
+            "available": true
+        },
+        {
+            "id": "ST503",
+            "name": "Veg Momos",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 120,
+                "full": 200
+            },
+            "available": true
+        },
+        {
+            "id": "ST504",
+            "name": "Chicken Momos",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "non-veg",
+            "price": {
+                "half": 150,
+                "full": 230
+            },
+            "available": true
+        },
+        {
+            "id": "ST505",
+            "name": "Veg Chowmein",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 110,
+                "full": 200
+            },
+            "available": true
+        },
+        {
+            "id": "ST507",
+            "name": "Aloo Tikki Chaat",
+            "category": "Street Food",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "half": 60,
+                "full": 100
+            },
+            "available": true
+        },
+        {
+            "id": "DR301",
+            "name": "Cold Coffee",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 60
+            },
+            "tags": [
+                "\u2b50 bestseller"
+            ],
+            "available": true
+        },
+        {
+            "id": "DR303",
+            "name": "Cappuccino",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 80
+            },
+            "available": true
+        },
+        {
+            "id": "DR305",
+            "name": "Black Coffee",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 50
+            },
+            "available": true
+        },
+        {
+            "id": "DR306",
+            "name": "Green Tea",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 30
+            },
+            "tags": [
+                "\ud83d\udcaa healthy"
+            ],
+            "available": true
+        },
+        {
+            "id": "DR308",
+            "name": "Chocolate Milkshake",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 80
+            },
+            "available": true
+        },
+        {
+            "id": "SH138",
+            "name": "Mango Shake",
+            "category": "Drinks",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 90
+            },
+            "available": true
+        },
+        {
+            "id": "DS401",
+            "name": "Gulab Jamun",
+            "category": "Desserts",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 40
+            },
+            "tags": [
+                "\u2b50 bestseller"
+            ],
+            "available": true
+        },
+        {
+            "id": "DS402",
+            "name": "Rasmalai",
+            "category": "Desserts",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 60
+            },
+            "available": true
+        },
+        {
+            "id": "DS403",
+            "name": "Ice Cream",
+            "category": "Desserts",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 30
+            },
+            "available": true
+        },
+        {
+            "id": "DS406",
+            "name": "Jalebi",
+            "category": "Desserts",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 50
+            },
+            "available": true
+        },
+        {
+            "id": "DS407",
+            "name": "Kheer",
+            "category": "Desserts",
+            "meal": [
+                "all"
+            ],
+            "type": "veg",
+            "price": {
+                "single": 60
+            },
+            "available": true
+        },
+        {
+            "id": "ID58",
+            "name": "onion",
+            "category": "breakfast",
+            "type": "veg",
+            "price": {
+                "single": 78
+            },
+            "available": true
+        }
+    ]
+}

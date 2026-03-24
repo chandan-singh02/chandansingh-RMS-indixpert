@@ -1,0 +1,41 @@
+[
+    {
+        "time": "2026-03-19 17:08:26",
+        "error_id": "errdda2a023",
+        "user_id": null,
+        "message": "cannot access local variable 'error_type' where it is not associated with a value",
+        "error_type": "UnboundLocalError",
+        "module": "menu",
+        "action": "show_menu",
+        "status": "failed",
+        "execution_time_ms": "110",
+        "environment": "development",
+        "version": "v2.4.0"
+    },
+    {
+        "time": "2026-03-19 17:11:04",
+        "error_id": "err55b30cdc",
+        "user_id": null,
+        "message": "PhoneNumber must be 10 digits",
+        "error_type": "VALIDATION_ERROR",
+        "module": "auth",
+        "action": "signup",
+        "status": "failed",
+        "execution_time_ms": "110",
+        "environment": "development",
+        "version": "v2.4.0"
+    },
+    {
+        "time": "2026-03-22 13:51:15",
+        "error_id": "erreca3330a",
+        "user_id": null,
+        "message": "name 'ErrorHandler' is not defined",
+        "error_type": "NameError",
+        "module": "menu",
+        "action": "show_menu",
+        "status": "failed",
+        "execution_time_ms": "110",
+        "environment": "development",
+        "version": "v2.4.0"
+    }
+]

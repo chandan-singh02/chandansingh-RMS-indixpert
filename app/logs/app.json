@@ -1,0 +1,52 @@
+[
+    {
+        "time": "2026-03-19 20:29:54",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-19 20:29:54",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-20 09:19:54",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-20 09:19:54",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-23 13:19:38",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-24 11:36:56",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-24 11:36:56",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-24 11:41:31",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-24 11:42:41",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-24 11:42:41",
+        "event": "main_menu_opened",
+        "module": "menu"
+    }
+]

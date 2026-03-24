@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1fed31e9",
+        "name": "chandan",
+        "email": "chandanxingh173@gmail.com",
+        "password": "hello1234",
+        "phone": "7465971986",
+        "role": "staff"
+    },
+    {
+        "id": "se87e7adf",
+        "name": "chandan",
+        "email": "singh@gmail.com",
+        "password": "singh123",
+        "phone": "7468930398",
+        "role": "admin"
+    }
+]
