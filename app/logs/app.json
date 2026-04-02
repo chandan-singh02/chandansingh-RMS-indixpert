@@ -48,5 +48,590 @@
         "time": "2026-03-24 11:42:41",
         "event": "main_menu_opened",
         "module": "menu"
+    },
+    {
+        "time": "2026-03-26 16:24:46",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-26 16:24:46",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-30 22:51:54",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-30 22:51:54",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-30 23:14:45",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-30 23:14:45",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-30 23:15:17",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-30 23:19:02",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-30 23:19:02",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-30 23:25:27",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-30 23:25:27",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-30 23:28:52",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-30 23:28:52",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 08:14:50",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 08:14:50",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 08:16:27",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 08:16:27",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 08:16:38",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 10:56:44",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 10:56:44",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 10:57:05",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 11:01:05",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 11:01:05",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 11:01:23",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 11:13:12",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 11:13:12",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 11:15:01",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 11:21:55",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 11:21:55",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 11:22:28",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 11:24:20",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 11:24:20",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 11:24:31",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 11:24:31",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 11:25:07",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 21:34:23",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 21:34:23",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 21:34:58",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-03-31 21:45:10",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-03-31 21:45:10",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-03-31 21:52:32",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 14:05:26",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 14:05:26",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 14:07:07",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 14:07:07",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 14:07:36",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 14:09:25",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 14:09:25",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 14:09:50",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 14:30:32",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 14:30:32",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 14:31:04",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 20:21:41",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 20:21:41",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 20:22:15",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 20:27:42",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 20:27:42",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 20:28:02",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 23:52:16",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 23:52:16",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 23:52:53",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-01 23:56:22",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-01 23:56:22",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-01 23:56:39",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 08:59:08",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 08:59:08",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 08:59:37",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 09:04:47",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 09:04:47",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 09:05:09",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 09:17:13",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 09:17:13",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 09:17:40",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 09:20:36",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 09:20:36",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 09:21:01",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 09:23:00",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 09:23:00",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 09:23:22",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:06:34",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:06:34",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:06:52",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:25:32",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:25:32",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:26:00",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:29:05",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:29:05",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:29:35",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:32:23",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:32:23",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:32:54",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:48:06",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:48:06",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:48:34",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 13:50:37",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 13:50:37",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 13:50:52",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 14:26:10",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 14:26:10",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 14:26:31",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 15:30:35",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 15:30:35",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 15:30:51",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-02 16:22:33",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 16:22:33",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 20:41:22",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 20:41:22",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-02 20:42:10",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-02 20:42:10",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-03 03:00:32",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-03 03:00:32",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-03 03:03:19",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-03 03:07:35",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-03 03:07:35",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-03 03:08:09",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-03 01:35:15",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-03 01:35:15",
+        "event": "main_menu_opened",
+        "module": "menu"
     }
 ]

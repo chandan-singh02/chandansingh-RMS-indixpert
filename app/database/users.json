@@ -1,7 +1,7 @@
 [
     {
         "id": "1fed31e9",
-        "name": "chandan",
+        "name": "chandan singh",
         "email": "chandanxingh173@gmail.com",
         "password": "hello1234",
         "phone": "7465971986",
@@ -9,10 +9,26 @@
     },
     {
         "id": "se87e7adf",
-        "name": "chandan",
-        "email": "singh@gmail.com",
-        "password": "singh123",
-        "phone": "7468930398",
+        "name": "admin",
+        "email": "admin123@gmail.com",
+        "password": "admin123",
+        "phone": "8468930398",
         "role": "admin"
+    },
+      {
+        "id": "se87e73df",
+        "name": "dhawal",
+        "email": "dhawal42@gmail.com",
+        "password": "dhawal123",
+        "phone": "7968930399",
+        "role": "staff"
+    },
+      {
+        "id": "se87e73df",
+        "name": "alex",
+        "email": "alex@gmail.com",
+        "password": "alex123",
+        "phone": "7868930398",
+        "role": "staff"
     }
 ]

@@ -17,3 +17,14 @@ def menu(msg):
 def user_input(msg):
     return input(Fore.WHITE + msg)
 
+
+
+def menus(msg):
+    return Fore.CYAN + Style.BRIGHT + msg
+
+def restaurant_color(msg):
+    return Fore.YELLOW + Style.BRIGHT + msg
+
+def sub_headings(msg):
+    return Fore.YELLOW + msg
+

@@ -1,4 +1,5 @@
 import json
+import traceback
 import os
 from datetime import datetime
 from app.utils.id_generator import generate_id
@@ -65,6 +66,7 @@ def log_error(user_id,error,module,action):
         "error_type":error_type,
         "module":module,       
         "action":action,
+        "trace":traceback.format_exc(),
         "status":"failed",        
         "execution_time_ms":"110",
         "environment":"development",

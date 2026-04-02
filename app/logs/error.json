@@ -37,5 +37,34 @@
         "execution_time_ms": "110",
         "environment": "development",
         "version": "v2.4.0"
+    },
+
+    {
+        "time": "2026-04-02 13:55:45",
+        "error_id": "errbf221797",
+        "user_id": null,
+        "message": "'Payment' object has no attribute 'prices'",
+        "error_type": "AttributeError",
+        "module": "payment",
+        "trace": "Traceback (most recent call last):\n  File \"c:\\Users\\franky\\Desktop\\chandansingh-RMS-indixpert\\app\\billing\\payment_service.py\", line 122, in show_invoice\n    price_obj = payment.prices[i]\n                ^^^^^^^^^^^^^^\nAttributeError: 'Payment' object has no attribute 'prices'\n",
+        "action": "show_invoice",
+        "status": "failed",
+        "execution_time_ms": "110",
+        "environment": "development",
+        "version": "v2.4.0"
+    },
+    {
+        "time": "2026-04-03 03:02:52",
+        "error_id": "err3fba03cb",
+        "user_id": null,
+        "message": "Invalid email format",
+        "error_type": "VALIDATION_ERROR",
+        "module": "auth",
+        "action": "signup",
+        "trace": "Traceback (most recent call last):\n  File \"c:\\Users\\franky\\Desktop\\chandansingh-RMS-indixpert\\app\\auth\\services\\signup_service.py\", line 35, in signup\n    InputValidators.validate_email(email)\n  File \"c:\\Users\\franky\\Desktop\\chandansingh-RMS-indixpert\\app\\utils\\validators.py\", line 52, in validate_email\n    raise AppError(\"Invalid email format\",\"VALIDATION_ERROR\")\napp.utils.app_error.AppError: Invalid email format\n",
+        "status": "failed",
+        "execution_time_ms": "110",
+        "environment": "development",
+        "version": "v2.4.0"
     }
 ]

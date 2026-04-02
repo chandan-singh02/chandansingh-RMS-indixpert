@@ -1,12 +1,12 @@
 from app.utils.validators import InputValidators
 from app.utils.database_handler import get_users
-from app.utils.app_error import AppError
 from app.utils.database_handler import get_users, save_users
 from app.utils.otp_handler import generate_otp, verify_otp
 from app.utils.log_handler import log_auth
 from app.dashboard.staff.staff_dashboard import StaffDashboard
 from app.dashboard.admin.admin_dashboard import AdminDashboard
 from app.utils.app_error import AppError
+from app.utils.error_handler import ErrorHandler
 from app.utils.session import CURRENT_USER
 import pwinput
 
@@ -27,7 +27,7 @@ class SigninService:
             menu("2. Continue with Phone")
             menu("3. Back")
 
-            choice = InputValidators.validate_number( user_input("Please select the option: "),"Login Option", 1)
+            choice = InputValidators.validate_number(user_input("Please select the option: "),"Login Option", 1)
 
             if choice == 1:
                 SigninService.login_with_email()
@@ -54,6 +54,7 @@ class SigninService:
             InputValidators.validate_password(password)
 
             users = get_users()
+            
 
             for user in users:
 

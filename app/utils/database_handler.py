@@ -3,6 +3,10 @@ import os
 
 USERS_DB_PATH = "app/database/users.json"
 FOOD_MENU_PATH = "app/database/food_menu.json"
+BOOKED_TABLE_PATH ="app/database/booked_table.json"
+CUSTOMER_ORDER_PATH = "app/database/customer_order.json"
+PAYMENT_PATH = "app/database/payment.json"
+
 
 def load_data(file_path):
 
@@ -44,11 +48,10 @@ def get_users():
 def save_users(user_record):
     append_data(USERS_DB_PATH,user_record)
 
-# def add_user(users):
-#     save_data(USERS_DB_PATH,user_record)
+def update_users(users): #for updating
+    save_data(USERS_DB_PATH,users)
 
-#FOOD MENU OPERATIONSs
-
+#FOOD MENU OPERATIONS
 def get_food_menu():
     return load_data(FOOD_MENU_PATH)
 
@@ -56,8 +59,32 @@ def get_food_menu():
 def save_food_menu(food_menu_record):
     print("save food menu database handler")
     save_data(FOOD_MENU_PATH,food_menu_record)
-    
 
+
+#booking operations
+def get_bookings():
+    return load_data(BOOKED_TABLE_PATH)
+
+
+def save_bookings(bookings):
+    save_data(BOOKED_TABLE_PATH, bookings)
+
+
+#order operations
+def get_orders():
+    return load_data(CUSTOMER_ORDER_PATH)
+
+
+def save_orders(orders):
+    save_data(CUSTOMER_ORDER_PATH, orders)
+
+#payment operations
+
+def get_payments():
+    return load_data(PAYMENT_PATH)
+
+def save_payments(payments):
+    save_data(PAYMENT_PATH, payments)
 
 
 

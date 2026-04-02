@@ -25,21 +25,17 @@ class UserMenu:
             menu("3. Exit")
 
             try:
-                choice = InputValidators.validate_number(
-                    user_input("Please select the option: "),
-                    "Menu Choice",
-                    1
-                )
+                choice = InputValidators.validate_number( user_input("Please select the option: "),"Menu Choice",1)
 
                 if choice == 1:
                     SignupService.signup()
             
                 elif choice == 2:
-                    SigninService.signin()
+                    SigninService.signin() 
             
                 elif choice == 3:
                     error("\nExiting...")
-                    info("See you soon 👋")
+                    info("See you soon")
                     log_app("application_exit","menu") 
                     break
             

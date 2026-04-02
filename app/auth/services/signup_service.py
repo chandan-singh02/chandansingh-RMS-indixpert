@@ -12,7 +12,8 @@ from app.utils.colors import error, success, info, menu, user_input
 
 
 class SignupService:
-        
+
+    @staticmethod    
     def signup():
         user_id = None
 
@@ -36,6 +37,7 @@ class SignupService:
             InputValidators.validate_phone(phone)
 
             users = get_users()
+            # print(users)
 
             for user in users:
                 if user["email"] == email:
@@ -51,7 +53,7 @@ class SignupService:
             if not verify_otp(otp):
                 raise AppError("Invalid OTP","INVALID_OTP")
 
-            new_user = User(generate_id("s"), name, email, password, phone)
+            new_user = User(generate_id("usr_"), name, email, password, phone)
 
             user_id = new_user.id
 
