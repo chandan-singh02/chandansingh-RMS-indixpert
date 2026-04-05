@@ -8,7 +8,7 @@ from app.order.model.order import Order
 
 import datetime
 from app.utils.colors import error, success, info, menu, user_input
-
+from app.utils.ui_helper import OrderViewer
 class OrderService:
 
    
@@ -54,13 +54,13 @@ class OrderService:
 
                 categories = menu_data.get("categories", [])
 
-                print("\nselect Category:")
+                info("\nselect Category:")
                 i = 1
                 for c in categories:
-                    print(str(i) + ". " + c)
+                    menu(str(i) + ". " + c)
                     i += 1
 
-                choice = int(input("Enter category choice: "))
+                choice = int(input("\nEnter category choice: "))
 
                 if choice < 1 or choice > len(categories):
                     raise AppError("Invalid category selected","VALIDATION_ERROR")
@@ -70,18 +70,18 @@ class OrderService:
                 all_items = menu_data.get("menu", [])
                 filtered_items = []
 
-                print("\nItems:")
+                info("\nItems:")
                 i = 1
                 for item in all_items:
                     if item["category"].lower() == selected_category.lower():
                         filtered_items.append(item)
-                        print(str(i) + ". " + item["name"])
+                        menu(str(i) + ". " + item["name"])
                         i += 1
 
                 if len(filtered_items) == 0:
                     raise AppError("No items found","VALIDATION_ERROR")
 
-                item_choice = int(input("Select item: "))
+                item_choice = int(input("\nSelect item: "))
 
                 if item_choice < 1 or item_choice > len(filtered_items):
                     raise AppError("Invalid item","VALIDATION_ERROR")
@@ -135,14 +135,14 @@ class OrderService:
 
             save_orders(save_list)
 
-            print("\nOrder placed successfully!")
-            print("Order ID:", order.id)
+            success("\nOrder placed successfully!")
+            success("Order ID:", order.id)
 
         except Exception as e:
-            ErrorHandler.handle(e, CURRENT_USER["id"], "ORDER", "TAKE_ORDER")
+            ErrorHandler.handle(e, CURRENT_USER["id"], "order", "take_order")
 
 
-    # ---------- MY ORDERS ----------
+   
     @staticmethod
     def my_orders():
         try:
@@ -159,20 +159,17 @@ class OrderService:
             for o in orders:
                 if o.staff == CURRENT_USER["name"]:
                     found = True
-                    print("\n----------------")
-                    print("Order ID:", o.id)
-                    print("Customer:", o.customer_name)
-                    print("Items:", o.items)
-                    print("Date:", o.date)
+                    
+                    OrderViewer.print_order_box(o)
+                
 
             if not found:
-                print("No orders found")
+                raise AppError("Order not found","VALIDATION_ERROR")
 
         except Exception as e:
-            ErrorHandler.handle(e, CURRENT_USER["id"], "ORDER", "MY_ORDERS")
+            ErrorHandler.handle(e, CURRENT_USER["id"], "order", "my_order")
 
 
-    # ---------- CANCEL ORDER ----------
     @staticmethod
     def cancel_order():
         try:
@@ -204,7 +201,7 @@ class OrderService:
 
             save_orders(save_list)
 
-            print("Order cancelled successfully")
+            success("\nOrder cancelled successfully")
 
         except Exception as e:
-            ErrorHandler.handle(e, CURRENT_USER["id"], "ORDER", "CANCEL_ORDER")
+            ErrorHandler.handle(e, CURRENT_USER["id"], "order", "cancel_order")

@@ -14,5 +14,30 @@
         "seats": 12,
         "seat_charge": 600,
         "date": "2026-04-02 14:27:04.057103"
+    },
+    {
+        "payment_id": "pay4c5c1bf8",
+        "order_id": "ord_70cc4765",
+        "customer_name": "chandan",
+        "ordered_items": [
+            {
+                "Dal Fry": 80
+            },
+            {
+                "Tomato Soup": 120
+            },
+            {
+                "Green Tea": 30
+            },
+            {
+                "Jeera Rice": 100
+            }
+        ],
+        "total_amount": 430,
+        "payment_method": "cash",
+        "booking_duration": 60,
+        "seats": 2,
+        "seat_charge": 100,
+        "date": "2026-04-05 10:45:31.283924"
     }
 ]

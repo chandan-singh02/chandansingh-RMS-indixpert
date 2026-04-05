@@ -1,7 +1,4 @@
-from app.utils.database_handler import (
-    get_orders, get_bookings,
-    get_payments, save_payments
-)
+from app.utils.database_handler import (  get_orders, get_bookings, get_payments, save_payments)
 from app.utils.app_error import AppError
 from app.utils.error_handler import ErrorHandler
 from app.utils.id_generator import generate_id
@@ -9,6 +6,7 @@ from app.billing.model.payment import Payment
 
 import datetime
 from app.utils.colors import error, success, info, menu, user_input
+from app.utils.ui_helper import InvoiceViewer
 
 class PaymentService:
     @staticmethod
@@ -61,7 +59,7 @@ class PaymentService:
             payment_method = input("Enter payment method (UPI/Cash): ")
 
             payment = Payment(
-                generate_id("pay"),
+                generate_id("pay_"),
                 order_id,
                 order["customer_name"],
                 order["prices"],
@@ -101,41 +99,8 @@ class PaymentService:
             if payment is None:
                 raise AppError("Payment not found", "VALIDATION_ERROR")
 
-            print("\n===================================")
-            print("      Quick Serve Restaurant")
-            print("===================================")
-
-            print("Payment Date:", payment.date)
-            print("-----------------------------------")
-
-            print("\nITEMS:")
-            dish_total = 0
-
-            for item in payment.ordered_items:
-                for name in item:
-                    price =item[name]
-                    dish_total += price
-                    print(f"{name}---> Rs {price}")
-            print("\n-----------------------------------")
-            print("Dish Total:", dish_total)
-
-            print("Seat Charge:", payment.seat_charge)
-
-            time_charge = payment.booking_duration * 2
-            print("Time Charge:", time_charge)
-
-            sub_total = dish_total + payment.seat_charge + time_charge
-
             
-            gst = sub_total * 0.025
-
-            
-            print("GST:", round(cgst, 2))
-
-            total = sub_total + sgst + gst
-
-            print("\nTOTAL:", round(total, 2))
-            print("===================================")
+            InvoiceViewer.print_invoice(payment)
 
         
         except Exception as e:

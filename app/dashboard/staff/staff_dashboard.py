@@ -12,7 +12,7 @@ class StaffDashboard:
     def show_dashboard():
 
         log_app("staff_dashboard_opened","dashboard") 
-        BookingService.init_tables()
+        booking = BookingService()
 
         while True:
             info("\n==================================================")
@@ -35,13 +35,13 @@ class StaffDashboard:
                 Menu.view_menu()
 
             elif choice == "2":
-                BookingService.book_table()
+                booking.book_table()
 
             elif choice == "3":
-                BookingService.view_bookings()
+                booking.view_bookings()
 
             elif choice == "4":
-                OrderService.cancel_booking()
+                booking.cancel_booking()
 
             elif choice == "5":
                 OrderService.take_order()

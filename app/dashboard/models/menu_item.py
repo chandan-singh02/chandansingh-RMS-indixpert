@@ -4,11 +4,11 @@ class MenuItem:
         self.name = name
         self.category = category
         self.food_type = food_type
-        self.price = price  # dict: {"single": 120} OR {"half": 60, "full": 100}
+        self.price = price 
         self.tags = tags
         self.available = available
 
-    # ---------- PRICE HELPERS ----------
+
     def get_single(self):
         return self.price.get("single", "-")
 
@@ -18,7 +18,7 @@ class MenuItem:
     def get_full(self):
         return self.price.get("full", "-")
 
-    # ---------- CONVERT OBJECT → DICT ----------
+
     def to_dict(self):
         return {
             "id": self.id,
@@ -30,7 +30,6 @@ class MenuItem:
             "available": self.available
         }
 
-    # ---------- CONVERT DICT → OBJECT ----------
     @staticmethod
     def from_dict(data):
         return MenuItem(

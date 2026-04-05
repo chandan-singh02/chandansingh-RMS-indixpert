@@ -21,7 +21,7 @@ class Menu:
 
     def group_by_category(self):
         categories = {}
-        print("group by catgoru",categories)
+        # print("group by catgoru",categories)
 
         for item in self.items:
             if item.category not in categories:

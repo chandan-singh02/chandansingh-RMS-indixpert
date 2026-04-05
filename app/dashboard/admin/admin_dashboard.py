@@ -7,6 +7,7 @@ from app.utils.colors import error, success, info, menu, user_input
 from app.utils.error_handler import ErrorHandler
 from app.utils.session import CURRENT_USER
 from app.reports.reports_service import ReportService
+from app.dashboard.admin.manageTables.tables_service import TableService
 class AdminDashboard:
 
     @staticmethod
@@ -19,8 +20,9 @@ class AdminDashboard:
                 info("==================================================\n")
                 menu("1. Manage Menu")
                 menu("2. Manage Staff")
-                menu("3. Reports")
-                menu("2. Exit")
+                menu("3. Manage Tables")
+                menu("4. Reports")
+                menu("5. Exit")
 
                 choice = InputValidators.validate_number(input("Please select the option: "),"ADMIN DASHBOARD OPTIONS", 1) 
 
@@ -28,12 +30,17 @@ class AdminDashboard:
                     AdminDashboard.manage_menu()
 
                 elif choice == 2:
-                    AdminDashboard.manage_staff()        
+                    AdminDashboard.manage_staff() 
+
 
                 elif choice == 3:
-                    ReportService.report_menu()
+                    AdminDashboard.manage_tables()
+       
 
                 elif choice == 4:
+                    ReportService.report_menu()
+
+                elif choice == 5:
                     print("Logging out...")
                     break
 
@@ -83,7 +90,7 @@ class AdminDashboard:
                     service.delete_category()
             
                 elif choice == 7:
-                    service.delete_category()
+                    break
 
                 else:
                     menu("Invalid option")
@@ -107,7 +114,6 @@ class AdminDashboard:
                 if choice == 1:
                     service.load_users()
                     service.display_users()
-                    print("view menu")
 
                 elif choice == 2:
                     service.update_role()
@@ -119,6 +125,47 @@ class AdminDashboard:
                     menu("Invalid option")
         except Exception as e:
             ErrorHandler.handle(e,user_id=CURRENT_USER["id"],module="admindashboard",action="manage_staff")
+
+
+    
+  
+
+
+    @staticmethod
+    def manage_tables():
+        table_service = TableService()
+
+        while True:
+            info("\n========== MANAGE Tables ==========")
+            print("1. Add Table")
+            print("2. Delete Table")
+            print("3. Update Table")
+            print("4. View Tables")
+            print("5. Back")
+
+            choice = input("Enter choice: ")
+
+            try:
+                if choice == "1":
+                    table_service.add_table()
+
+                elif choice == "2":
+                    table_service.delete_table()
+
+                elif choice == "3":
+                    table_service.update_table()
+
+                elif choice == "4":
+                    table_service.view_tables()
+
+                elif choice == "5":
+                    break
+
+                else:
+                    print("Invalid choice")
+
+            except AppError as e:
+                ErrorHandler.handle(e,user_id=CURRENT_USER["id"],module="admindashboard",action="manage_tables")
 
     
 

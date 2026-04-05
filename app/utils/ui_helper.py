@@ -68,3 +68,30 @@ class MenuViewer:
             print("|" + row.ljust(width) + "|")
 
         MenuViewer.print_line()
+    
+    @staticmethod
+    def print_order_box(order):
+        width = MenuViewer.WIDTH
+
+        print("\n")
+        MenuViewer.print_line()
+        MenuViewer.print_center("ORDER DETAILS")
+        MenuViewer.print_line()
+
+        # Basic Info
+       print(menus(f"| Order ID : {order.id}".ljust(width)) + "|")
+       print(menus(f"| Customer : {order.customer_name}".ljust(width)) + "|")
+       print(menus(f"| Date     : {order.date}".ljust(width)) + "|")
+
+       MenuViewer.print_line()
+
+       # Items Header
+       print(menus("| Items:".ljust(width)) + "|")
+
+        # Items List
+        for i, item in enumerate(order.items, start=1):
+            for name, size in item.items():
+                line = f"{i}. {name} ({size.capitalize()})"
+                print(menus(f"| {line}".ljust(width)) + "|")
+
+        MenuViewer.print_line()

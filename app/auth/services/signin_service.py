@@ -42,8 +42,7 @@ class SigninService:
                 error("Invalid option")
     
     @staticmethod
-    def login_with_email():
-        user_id = None  
+    def login_with_email():  
 
         try:
             info("\n========== LOGIN WITH Email ==========")
@@ -55,11 +54,11 @@ class SigninService:
 
             users = get_users()
             
+            
 
             for user in users:
 
-                if user["email"] == email:
-                    user_id = user["id"]   
+                if user["email"] == email: 
 
                     if user["password"] != password:
                         raise AppError("Invalid password","INVALID_PASSWORD")
@@ -70,7 +69,7 @@ class SigninService:
                     CURRENT_USER["name"]=user["name"]
                     CURRENT_USER["role"] =user["role"]
 
-                    log_auth("login_success", user_id,"login","success")
+                    log_auth("login_success","login","success")
 
                     if user["role"] == "staff":
                          StaffDashboard.show_dashboard()
