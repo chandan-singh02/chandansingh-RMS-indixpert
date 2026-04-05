@@ -13,6 +13,10 @@ class ErrorHandler:
 
         if isinstance(error,AppError):
             print(Style.BRIGHT + Fore.RED + f"\n{str(error.message)}")
+
+        elif isinstance(error,Exception):
+            print(Style.BRIGHT + Fore.RED + f"\n{str(error)}")
+            
         else:
             print(Style.BRIGHT + Fore.RED + "\nSomething went wrong.Please try again later")
 

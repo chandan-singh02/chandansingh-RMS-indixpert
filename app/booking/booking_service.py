@@ -8,7 +8,7 @@ from app.utils.session import CURRENT_USER
 
 from app.utils.colors import error, success, info, menu, user_input
 from app.utils.id_generator import generate_id
-
+from app.utils.validators import InputValidators
 
 
 class DataRepository:
@@ -108,14 +108,14 @@ class BookingService:
         try:
             info("\n========== BOOK TABLE ==========")
 
-            date = input("Date (YYYY-MM-DD): ")
+            date =  input("Date (YYYY-MM-DD): ")
             start = input("Start time (02:00 PM): ")
-            end = input("End time (03:00 PM): ")
+            end =   input("End time (03:00 PM): ")
 
             duration = self.validate_datetime(date, start, end)
 
             customer = input("Customer name: ")
-            staff = CURRENT_USER["id"]
+            staff = CURRENT_USER["name"]
             print("Staff name who booked:",staff)
 
             available = self.get_available_tables()
@@ -126,9 +126,9 @@ class BookingService:
             menu("\nAvailable Tables:")
             for t in available:
                 print("Table:", t["table_no"], "Seats:", t["remaining_seats"])
-
-            table_no = int(input("Select table: "))
-            seats = int(input("Seats required: "))
+            
+            table_no = InputValidators.validate_number(input("Select table no : "),"Table")
+            seats = InputValidators.validate_number(input("Select seats u want: "),"Seats")
 
             selected = None
 

@@ -120,6 +120,9 @@ class AdminDashboard:
 
                 elif choice == 3:
                     service.delete_staff()
+                
+                elif choice == 4:
+                    break
 
                 else:
                     menu("Invalid option")
@@ -143,22 +146,22 @@ class AdminDashboard:
             print("4. View Tables")
             print("5. Back")
 
-            choice = input("Enter choice: ")
+            choice = InputValidators.validate_number(input("Please select the option: "),"MANAGE TABLE OPTIONS", 1) 
 
             try:
-                if choice == "1":
+                if choice == 1:
                     table_service.add_table()
 
-                elif choice == "2":
+                elif choice == 2:
                     table_service.delete_table()
 
-                elif choice == "3":
+                elif choice == 3:
                     table_service.update_table()
 
-                elif choice == "4":
+                elif choice == 4:
                     table_service.view_tables()
 
-                elif choice == "5":
+                elif choice == 5:
                     break
 
                 else:

@@ -20,5 +20,49 @@
         "staff": "se87e73df",
         "seats": 2,
         "duration": 1
+    },
+    {
+        "id": "tbl_87c62118",
+        "table_no": 4,
+        "date": "2026-04-05",
+        "start_time": "08:00 PM",
+        "end_time": "08:40 PM",
+        "customer": "ankur rai",
+        "staff": "dhawal",
+        "seats": 5,
+        "duration": 40
+    },
+    {
+        "id": "tbl_1dc4a088",
+        "table_no": 8,
+        "date": "2026-04-12",
+        "start_time": "02:00 PM",
+        "end_time": "03:00 PM",
+        "customer": "aman deep",
+        "staff": "dhawal",
+        "seats": 1,
+        "duration": 60
+    },
+    {
+        "id": "tbl_7ec9076c",
+        "table_no": 8,
+        "date": "2026-04-05",
+        "start_time": "04:20 PM",
+        "end_time": "04:21 PM",
+        "customer": "malti ",
+        "staff": "dhawal",
+        "seats": 4,
+        "duration": 1
+    },
+    {
+        "id": "tbl_f0b9c599",
+        "table_no": 3,
+        "date": "2026-04-05",
+        "start_time": "10:00 PM",
+        "end_time": "11:00 PM",
+        "customer": "anjali",
+        "staff": "chandan",
+        "seats": 1,
+        "duration": 60
     }
 ]

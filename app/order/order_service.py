@@ -136,7 +136,7 @@ class OrderService:
             save_orders(save_list)
 
             success("\nOrder placed successfully!")
-            success("Order ID:", order.id)
+            print("Order ID:", order.id)
 
         except Exception as e:
             ErrorHandler.handle(e, CURRENT_USER["id"], "order", "take_order")

@@ -39,5 +39,43 @@
         "seats": 2,
         "seat_charge": 100,
         "date": "2026-04-05 10:45:31.283924"
+    },
+    {
+        "payment_id": "pay_e1e91157",
+        "order_id": "ord_540efdb8",
+        "customer_name": "aman deep",
+        "ordered_items": [
+            {
+                "Chicken Pasta": 240
+            },
+            {
+                "Veg Pulao": 90
+            }
+        ],
+        "total_amount": 380,
+        "payment_method": "cash",
+        "booking_duration": 60,
+        "seats": 1,
+        "seat_charge": 50,
+        "date": "2026-04-05 16:07:01.395629"
+    },
+    {
+        "payment_id": "pay_8f7e544f",
+        "order_id": "ord_4354dace",
+        "customer_name": "malti ",
+        "ordered_items": [
+            {
+                "Aloo Paratha": 50
+            },
+            {
+                "Chana Dal": 110
+            }
+        ],
+        "total_amount": 360,
+        "payment_method": "upi",
+        "booking_duration": 1,
+        "seats": 4,
+        "seat_charge": 200,
+        "date": "2026-04-05 16:22:35.251887"
     }
 ]

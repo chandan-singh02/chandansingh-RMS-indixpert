@@ -98,7 +98,7 @@ class SigninService:
             InputValidators.validate_phone(phone)
             
             users = get_users()
-            print("phone user",users)
+            # print("phone user",users)
 
             for user in users:
                 if user["phone"] == phone:

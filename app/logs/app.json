@@ -123,5 +123,95 @@
         "time": "2026-04-05 12:55:54",
         "event": "main_menu_opened",
         "module": "menu"
+    },
+    {
+        "time": "2026-04-05 14:59:28",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 14:59:28",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-05 15:01:14",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 15:13:16",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 15:13:16",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-05 15:13:44",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 15:40:19",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 15:40:19",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-05 15:41:00",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 15:47:33",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 15:47:33",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-05 15:47:49",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 15:48:55",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 15:48:55",
+        "event": "main_menu_opened",
+        "module": "menu"
+    },
+    {
+        "time": "2026-04-05 15:49:18",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 16:15:07",
+        "event": "staff_dashboard_opened",
+        "module": "dashboard"
+    },
+    {
+        "time": "2026-04-05 16:33:42",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 16:33:42",
+        "event": "main_menu_opened",
+        "module": "menu"
     }
 ]

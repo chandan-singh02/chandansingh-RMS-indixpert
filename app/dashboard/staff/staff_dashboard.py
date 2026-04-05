@@ -6,6 +6,7 @@ from app.menu.foodmenu_viewer import Menu
 from app.booking.booking_service import BookingService
 from app.order.order_service import OrderService
 from app.billing.payment_service import PaymentService
+from app.utils.validators import InputValidators
 class StaffDashboard:
 
     @staticmethod
@@ -28,45 +29,46 @@ class StaffDashboard:
             menu("8. Take payment")
             menu("9. View Invoice")
             menu("10.Logout")
+            
 
-            choice = user_input("Select option: ")
+            choice = InputValidators.validate_number(input("Please select the option: "),"Staff Dashboard Option")
 
-            if choice == "1":
+            if choice == 1:
                 Menu.view_menu()
 
-            elif choice == "2":
+            elif choice == 2:
                 booking.book_table()
 
-            elif choice == "3":
+            elif choice == 3:
                 booking.view_bookings()
 
-            elif choice == "4":
+            elif choice == 4:
                 booking.cancel_booking()
 
-            elif choice == "5":
+            elif choice == 5:
                 OrderService.take_order()
 
-            elif choice == "6":
+            elif choice == 6:
                 OrderService.my_orders()
             
-            elif choice == "7":
+            elif choice == 7:
                 OrderService.cancel_order()
             
-            elif choice == "8":
+            elif choice == 8:
                 PaymentService.make_payment()
             
-            elif choice == "9":
+            elif choice == 9:
                 PaymentService.show_invoice()
             
 
-            elif choice == "10":
+            elif choice == 10:
                 info("Logging out...")
 
                 CURRENT_USER["id"] =None
                 CURRENT_USER["name"]=None
                 CURRENT_USER["role"] =None
 
-                log_app("staff_dashboard_closed")
+                log_app("staff_dashboard_closed","dashboard")
                 break
 
             else:

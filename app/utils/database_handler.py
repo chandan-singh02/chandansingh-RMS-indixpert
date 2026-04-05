@@ -94,7 +94,6 @@ def save_payments(payments):
 def get_tables():
     return load_data(TABLE_PATH)
 
-
 def save_tables(tables):
     save_data(TABLE_PATH, tables)
 
@@ -102,13 +101,6 @@ def save_tables(tables):
 #admin pricing operation
 def get_pricing():
     data = load_data(PRICING_PATH)
-
-    if data == []:
-        data = {
-            "seat_price": 50,
-            "gst_percent": 5
-        }
-
     return data
 
 
