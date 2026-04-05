@@ -3,34 +3,34 @@ class MenuViewer:
 
     WIDTH = 84
 
-    @staticmethod
-    def print_line():
-       print(menus("+" + "-" * MenuViewer.WIDTH + "+"))
+    @classmethod
+    def print_line(cls):
+       print(menus("+" + "-" * cls.WIDTH + "+"))
 
-    @staticmethod
-    def print_center(text):
-        print(menus("|" + text.center(MenuViewer.WIDTH) + "|"))
+    @classmethod
+    def print_center(cls,text):
+        print(menus("|" + text.center(cls.WIDTH) + "|"))
 
-    @staticmethod
-    def display_header(data):
+    @classmethod
+    def display_header(cls,data):
         res = data.get("restaurant", {})
 
-        print("\n+" + "-" * MenuViewer.WIDTH + "+")
-        print("|" + restaurant_color(res.get("name", "").upper().center(MenuViewer.WIDTH)) + "|")
-        print("|" + sub_headings(res.get("location", "").center(MenuViewer.WIDTH)) + "|")
-        print("|" + sub_headings(res.get("contact", "").center(MenuViewer.WIDTH)) + "|")
-        print("+" + "-" * MenuViewer.WIDTH + "+")
+        print("\n+" + "-" * cls.WIDTH + "+")
+        print("|" + restaurant_color(res.get("name", "").upper().center(cls.WIDTH)) + "|")
+        print("|" + sub_headings(res.get("location", "").center(cls.WIDTH)) + "|")
+        print("|" + sub_headings(res.get("contact", "").center(cls.WIDTH)) + "|")
+        print("+" + "-" * cls.WIDTH + "+")
 
 
-    @staticmethod
-    def print_box(title, items):
+    @classmethod
+    def print_box(cls,title, items):
         if not items:
             return
 
-        width = MenuViewer.WIDTH
+        width = cls.WIDTH
 
-        MenuViewer.print_center(title.upper())
-        MenuViewer.print_line()
+        cls.print_center(title.upper())
+        cls.print_line()
 
         # column sizes
         name_w = 24
@@ -50,7 +50,7 @@ class MenuViewer:
         )
 
         print("|" + header.ljust(width) + "")
-        MenuViewer.print_line()
+        cls.print_line()
 
         # ===== ROWS =====
         for item in items:
@@ -67,31 +67,82 @@ class MenuViewer:
 
             print("|" + row.ljust(width) + "|")
 
-        MenuViewer.print_line()
+        cls.print_line()
     
-    @staticmethod
-    def print_order_box(order):
-        width = MenuViewer.WIDTH
+
+class OrderViewer(MenuViewer):
+
+    WIDTH = 50
+    @classmethod
+    def print_order_box(cls,order):
+        # WIDTH = MenuViewer.WIDTH
+    
 
         print("\n")
-        MenuViewer.print_line()
-        MenuViewer.print_center("ORDER DETAILS")
-        MenuViewer.print_line()
+        cls.print_line()
+        cls.print_center("ORDER DETAILS")
+        cls.print_line()
 
-        # Basic Info
-       print(menus(f"| Order ID : {order.id}".ljust(width)) + "|")
-       print(menus(f"| Customer : {order.customer_name}".ljust(width)) + "|")
-       print(menus(f"| Date     : {order.date}".ljust(width)) + "|")
+       
+        print(f"| Order ID : {order.id}".ljust(cls.WIDTH) + "|")
+        print(f"| Customer : {order.customer_name}".ljust(cls.WIDTH) + "|")
+        print(f"| Date     : {order.date}".ljust(cls.WIDTH) + "|")
+ 
+        cls.print_line()
 
-       MenuViewer.print_line()
+      
+        print("| Items:".ljust(cls.WIDTH) + "|")
 
-       # Items Header
-       print(menus("| Items:".ljust(width)) + "|")
-
-        # Items List
-        for i, item in enumerate(order.items, start=1):
+        count = 1
+        for item in order.items:
             for name, size in item.items():
-                line = f"{i}. {name} ({size.capitalize()})"
-                print(menus(f"| {line}".ljust(width)) + "|")
+                line = f"{count}. {name} ({size.capitalize()})"
+                print(f"| {line}".ljust(cls.WIDTH) + "|")
+                count += 1
 
-        MenuViewer.print_line()
+        cls.print_line()
+
+
+class InvoiceViewer(MenuViewer):
+    WIDTH = 60   
+
+    @classmethod
+    def print_invoice(cls, payment):
+        print("\n")
+
+        cls.print_line()
+        cls.print_center("Quick Serve Restaurant")
+        cls.print_center("PAYMENT INVOICE")
+        cls.print_line()
+
+        print(f"| Payment ID : {payment.payment_id}".ljust(cls.WIDTH) + "|")
+        print(f"| Customer   : {payment.customer_name}".ljust(cls.WIDTH) + "|")
+        print(f"| Date       : {payment.date}".ljust(cls.WIDTH) + "|")
+
+        cls.print_line()
+
+        info("| Items:".ljust(cls.WIDTH) + "|")
+
+        dish_total = 0
+
+        for item in payment.ordered_items:
+            for name in item:
+                price = item[name]
+                dish_total += price
+                line = f"{name}    : ₹{price}"
+                print(f"| {line}".ljust(cls.WIDTH) + "|")
+
+        cls.print_line()
+
+     
+        print(f"| Dish Total  : ₹{dish_total}".ljust(cls.WIDTH) + "|")
+        print(f"| Seat Charge : ₹{payment.seat_charge}".ljust(cls.WIDTH) + "|")
+
+        sub_total = dish_total + payment.seat_charge
+        gst = round(sub_total * 0.05, 2)
+        total = sub_total + gst
+
+        print(f"| GST         : ₹{gst}".ljust(cls.WIDTH) + "|")
+        print(f"| TOTAL       : ₹{round(total, 2)}".ljust(cls.WIDTH) + "|")
+
+        cls.print_line()

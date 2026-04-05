@@ -113,5 +113,15 @@
         "time": "2026-04-05 12:50:03",
         "event": "main_menu_opened",
         "module": "menu"
+    },
+    {
+        "time": "2026-04-05 12:55:54",
+        "event": "application_started",
+        "module": "main"
+    },
+    {
+        "time": "2026-04-05 12:55:54",
+        "event": "main_menu_opened",
+        "module": "menu"
     }
 ]
