@@ -57,7 +57,7 @@ class BookingService:
             full_start = datetime.datetime.combine(user_date, start_dt.time())
 
             if full_start <= now:
-                raise AppError("start time already passed","VALIDATION_ERROR")
+                raise AppError("start time is already passed","VALIDATION_ERROR")
 
         duration = (end_dt - start_dt).seconds // 60
         return duration
